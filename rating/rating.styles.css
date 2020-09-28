@@ -1,0 +1,25 @@
+.container{
+    min-height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    background-color: #2dd46d;
+}
+
+.lemons {
+    min-height:auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:auto;
+}
+
+.far {
+    font-size: 5em;
+}
+
+.active {
+    color: yellow;
+}
+
