@@ -1,4 +1,4 @@
-let lemons = document.getElementsByTagName("i"), i; //[]
+var lemons = document.getElementsByTagName("i"), i; //[]
 
 
 function ratingHover(element){
@@ -8,6 +8,7 @@ function ratingHover(element){
    for ( i = 0; i <= selected; i++){
     lemons[i].classList.add('active');
    }
+   return false;
 }
 
 function ratingClick(element){
@@ -17,8 +18,9 @@ function ratingClick(element){
    for ( i = 0; i <= selected; i++){
     lemons[i].classList.add('active');
    }
-   
+   return false;
 }
+
 
 function clearRates() {
   for ( i = 0; i <= lemons.length; i++){
@@ -32,9 +34,9 @@ document.addEventListener('click', function(e){
     } 
 });
 
-document.addEventListener('mouseover', function(e){ 
-  if (!document.getElementById("lemons").contains(e.target)) { 
-     clearRates();
-  } 
-});
+// document.addEventListener('mouseover', function(e){ 
+//   if (!document.getElementById("lemons").contains(e.target)) { 
+//      clearRates();
+//   } 
+// });
 
